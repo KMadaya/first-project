@@ -20,7 +20,7 @@ exports.AlohaWorldDom = Component.specialize(/** @lends AlohaWorldDom# */ {
             var div = document.createElement("div");
             var fragment = document.createDocumentFragment();
             div.textContent = "Aloha World";
-            this.element.appendChild(div);
+           // this.element.appendChild(div);
             fragment.appendChild(div);
             fragment.appendChild(div.cloneNode(true));
             fragment.appendChild(div.cloneNode(true));
