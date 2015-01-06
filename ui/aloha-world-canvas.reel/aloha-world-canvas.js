@@ -19,7 +19,7 @@ exports.AlohaWorldCanvas = Component.specialize(/** @lends AlohaWorldCanvas# */ 
     draw:{
         value: function(){
             var canvas = this.element.querySelector('canvas');
-            canvas.getContext("3d").fillText("Aloha, World",20,20);
+            canvas.getContext("2d").fillText("Aloha, World",20,20);
         }
     }
 });
