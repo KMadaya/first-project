@@ -13,5 +13,13 @@ exports.AlohaWorldDom = Component.specialize(/** @lends AlohaWorldDom# */ {
         value: function AlohaWorldDom() {
             this.super();
         }
+    },
+    
+    draw:{
+        value: function() {
+            var div = document.createElement("div");
+            div.textContent = "Aloha world";
+            this.element.appendChild(div);
+        }
     }
 });
