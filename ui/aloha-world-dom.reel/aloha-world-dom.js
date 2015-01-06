@@ -18,7 +18,7 @@ exports.AlohaWorldDom = Component.specialize(/** @lends AlohaWorldDom# */ {
     draw:{
         value: function() {
             var div = document.createElement("div");
-            div.textContent = "Aloha world";
+            div.textContent = "Aloha World";
             this.element.appendChild(div);
         }
     }

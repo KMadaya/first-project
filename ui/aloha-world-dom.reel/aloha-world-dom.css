@@ -1,3 +1,13 @@
 .AlohaWorldDom {
+    font-size: large;
+    text-align: center;
 
+}
+
+.AlohaworldDom-left{
+    text-align: left;
+}
+
+.AlohaworldDom-right{
+    text-align: right;
 }
