@@ -1,3 +1,4 @@
+
 /**
  * @module ui/main.reel
  * @requires montage/ui/component
@@ -13,5 +14,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function Main() {
             this.super();
         }
+    },
+    defaultValue: {
+        value: "Aloha"
     }
 });
