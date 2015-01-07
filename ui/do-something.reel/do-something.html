@@ -34,20 +34,25 @@
                 }
             ]
         },
-        "checkWhat": {
+        "checkbox": {
             "prototype": "digit/ui/checkbox.reel",
             "properties": {
-                "checked": true,
-                "enabled": true
+                "element": {"#": "checkbox"},
+                "checked": true
             },
             "bindings": {
-                "checked": {"<-": "@owner.task.completed"}
+                "checked": {"<->": "@owner.task.completed"}
             }
         },
         "list": {
             "prototype": "digit/ui/list.reel",
             "properties": {
                 "element": {"#": "list"},
+                "content": [
+                    "",
+                    "",
+                    ""
+                ],
                 "contentController": {"@": "rangeController"}
             }
         },
@@ -59,14 +64,14 @@
                 ]
             }
         },
-        "result": {
-            "prototype": "digit/ui/text.reel",
+        "task": {
+            "prototype": "montage/ui/text.reel",
             "properties": {
-                "element": {"#": "result"},
+                "element": {"#": "task"},
                 "value": "Text"
             },
             "bindings": {
-                "value": {"<-": "@owner.task.title"}
+                "value": {"<->": "@owner.task.title"}
             }
         },
         "title": {
@@ -86,8 +91,8 @@
         <ul data-montage-id="list">
             <li></li>
         </ul>
-        <p data-montage-id="text"></p>
-        <p data-montage-id="result"></p>
+        <input type="checkbox" data-montage-id="checkbox">
+        <p data-montage-id="task"></p>
     </div>
 </body>
 </html>
