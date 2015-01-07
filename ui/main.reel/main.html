@@ -13,6 +13,12 @@
                 "element": {"#": "main"}
             }
         },
+        "doSomething": {
+            "prototype": "ui/do-something.reel",
+            "properties": {
+                "element": {"#": "doSomething"}
+            }
+        },
         "MINUS": {
             "prototype": "digit/ui/button.reel",
             "properties": {
@@ -43,6 +49,12 @@
                 }
             ]
         },
+        "text": {
+            "prototype": "digit/ui/text.reel",
+            "properties": {
+                "value": "Text"
+            }
+        },
         "Total": {
             "prototype": "digit/ui/text.reel",
             "properties": {
@@ -58,6 +70,7 @@
         <button data-montage-id="PLUS"></button>
         <p data-montage-id="Total"></p>
         <button data-montage-id="MINUS"></button>
+        <div data-montage-id="doSomething"></div>
     </div>
 </body>
 </html>
