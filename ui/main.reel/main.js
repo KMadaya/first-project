@@ -17,5 +17,20 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     },
     defaultValue: {
         value: "Aloha"
+    },
+
+    handleIncrementAction: {
+        value: function (event) {
+            var value = Number(this.templateObjects.value.element.textContent);
+            this.templateObjects.value.element.textContent = value + 1;
+        }
+    },
+
+    handleDecrementAction: {
+        value: function (event) {
+            var value = Number(this.templateObjects.value.element.textContent);
+            this.templateObjects.value.element.textContent = value - 1;
+        }
     }
+
 });
