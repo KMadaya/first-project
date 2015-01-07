@@ -15,9 +15,9 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             this.super();
         }
     },
-    defaultValue: {
-        value: "Aloha"
-    },
+    //defaultValue: {
+    //    value: "Aloha"
+    //},
 
     handleIncrementAction: {
         value: function (event) {
