@@ -35,11 +35,15 @@ exports.Main = Component.specialize(/** @lends Main# */ {
 
     handlePLUSAction: {
         value: function (event) {
+            var value = Number(this.templateObjects.Total.element.textContent);
+            this.templateObjects.Total.element.textContent = value + 1;
         }
     },
 
     handleMINUSAction: {
         value: function (event) {
+            var value = Number(this.templateObjects.Total.element.textContent);
+            this.templateObjects.Total.element.textContent = value - 1;
         }
     }
 
