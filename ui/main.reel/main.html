@@ -12,13 +12,52 @@
             "properties": {
                 "element": {"#": "main"}
             }
+        },
+        "MINUS": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "MINUS"},
+                "enabled": true,
+                "label": "(-)"
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
+        "PLUS": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "PLUS"},
+                "enabled": true,
+                "label": "(+)"
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
+        "Total": {
+            "prototype": "digit/ui/text.reel",
+            "properties": {
+                "element": {"#": "Total"},
+                "value": "0"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-
+        <button data-montage-id="PLUS"></button>
+        <p data-montage-id="Total"></p>
+        <button data-montage-id="MINUS"></button>
     </div>
 </body>
 </html>

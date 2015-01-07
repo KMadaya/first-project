@@ -31,6 +31,16 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             var value = Number(this.templateObjects.Total.element.textContent);
             this.templateObjects.Total.element.textContent = value - 1;
         }
+    },
+
+    handlePLUSAction: {
+        value: function (event) {
+        }
+    },
+
+    handleMINUSAction: {
+        value: function (event) {
+        }
     }
 
 });
